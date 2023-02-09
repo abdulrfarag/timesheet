@@ -419,7 +419,7 @@ button {
   margin: 0;
 }
 
-a {
+/* a {
   color: #1b89bc;
   text-decoration: none;
 }
@@ -427,7 +427,21 @@ a {
 a:hover {
   color: #065b83;
   text-decoration: underline;
+} */
+
+a {
+  /* color: #1b89bc; */
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  font-size: larger;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
+a:link {color:#ff0000;}
+a:visited {color:#d4d4e5;}
+a:hover {font-size:150%;}
 
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
@@ -1230,6 +1244,7 @@ form [type='radio'] {
 
 .align-center {
   align-items: center;
+  background-color: #FF7F50;
 }
 
 .align-content-start {
