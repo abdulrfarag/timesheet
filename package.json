@@ -2,6 +2,10 @@
   "name": "timesheet",
   "version": "1.0.0",
   "description": "time-task",
+  "engines": {
+    "npm": "7.x",
+    "node": "16"
+  },
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
