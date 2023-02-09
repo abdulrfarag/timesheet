@@ -1,17 +1,17 @@
 [
     {
       "name": "Abdul",
-      "task": "Design.",
+      "task": "Design for this company.",
       "hours": 40
     },
     {
       "name": "Mike",
-      "task": "Planning",
+      "task": "Planning for this comepany.",
       "hours": 30
     },
     {
       "name": "Tom",
-      "task": "Database installation",
+      "task": "Database installation for this company.",
       "hours": 35
     }
   ]

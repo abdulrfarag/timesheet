@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
     const timesheets = timesheetData.map((timesheet) => timesheet.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
+    res.render('home', { 
         timesheets, 
         logged_in: req.session.logged_in 
       });
