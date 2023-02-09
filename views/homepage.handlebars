@@ -1,0 +1,24 @@
+<!-- Loop over each object in the projects array -->
+{{#each timesheets as |timesheet| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/project/{{timesheet.id}}">{{timesheet.name}}</a>
+    </h2>
+    <p>
+      <span for="img" aria-label="work">🧑‍💼</span>
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="work-hours">{{format_amount timesheet.hours}}</span>
+      needed!
+    </p>
+    <p>Created by {{timesheet.user.name}} on {{format_date timesheet.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{timesheet.task}}
+    </p>
+  </div>
+</div>
+{{/each}}

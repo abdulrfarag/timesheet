@@ -6,20 +6,20 @@
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New Timesheet!:</h3>
+    <h3>Create Work-Log:</h3>
 
-    <form class="form new-timesheet-form">
+    <form class="form new-project-form">
       <div class="form-group">
-        <label for="timesheet-name">timesheet belong:</label>
-        <input class="form-input" type="text" id="timesheet-name" name="timesheet-name" />
+        <label for="project-name">work log day:</label>
+        <input class="form-input" type="text" id="project-name" name="project-name" />
       </div>
       <div class="form-group">
-        <label for="timesheet-funding">add timesheets ($):</label>
-        <input class="form-input" type="number" id="timesheet-funding" name="timesheet-funding" />
+        <label for="project-funding">hours worked:</label>
+        <input class="form-input" type="number" id="project-funding" name="project-funding" />
       </div>
       <div class="form-group">
-        <label for="timesheet-desc">description:</label>
-        <textarea class="form-input" id="timesheet-desc" name="timesheet-desc"></textarea>
+        <label for="project-desc">tasks:</label>
+        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
@@ -28,8 +28,8 @@
   </div>
 
   {{#if timesheets.length}}
-  <div class="col-md-6 timesheet-list">
-    <h3>Current timesheets:</h3>
+  <div class="col-md-6 project-list">
+    <h3>Current Timesheets:</h3>
 
     {{#each timesheets as |timesheet|}}
     <div class="row mb-2">
