@@ -7,13 +7,13 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #17191a;
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
+  color: #0e0f0f;
   text-decoration: underline;
 }
 

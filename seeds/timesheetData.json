@@ -1,17 +1,17 @@
 [
     {
-      "name": "Abdul",
-      "task": "Design for this company.",
+      "name": "React portfolio",
+      "task": "portfolio back using javeScript and react.",
       "hours": 40
     },
     {
-      "name": "Mike",
-      "task": "Planning for this comepany.",
+      "name": "MERN",
+      "task": " web page where you can fine cheap flights.",
       "hours": 30
     },
     {
-      "name": "Tom",
-      "task": "Database installation for this company.",
+      "name": "Weather app",
+      "task": "app designed to check the weather.",
       "hours": 35
     }
   ]

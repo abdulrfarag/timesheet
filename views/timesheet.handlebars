@@ -4,11 +4,16 @@
   <p>{{task}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
   <p>
-    <span for="img" aria-label="work">🧑‍💼</span>
+    <span for="img" aria-label="time">⏱️ </span>
     <span class="dollar-amount">{{format_amount hours}}</span>
-    needed
+    Hours 
   </p>
   <p>
-    <button class="btn btn-primary">Fund this Project!</button>
+    {{#if logged_in}}
+        <a href="/profile">Add More Task</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
   </p>
 </div>

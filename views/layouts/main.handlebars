@@ -14,13 +14,18 @@
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
         <span role="img" aria-label="work">🧑‍💼</span>
-        <a href="/">Add Your Work Log!</a>
+        {{#if logged_in}}
+        <h>Task Log</h> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile">profile</a>
+       
         {{else}}
         <a href="/login">login</a>
         {{/if}}
