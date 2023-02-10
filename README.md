@@ -1,4 +1,4 @@
-# Time log
+# task log
 this app is meant to log the time spent on a task.
 
 
